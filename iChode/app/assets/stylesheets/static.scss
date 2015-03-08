@@ -1,0 +1,70 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$shouldersc:#7d7;
+$chestc:#79c;
+$backc:#b9b;
+$armsc:#f66;
+$legsc:#fb4;
+
+
+h1{
+	text-align:center;
+	font-size:40px;
+}
+
+#mainmenubox{
+	position:relative;
+	width:600px;
+	margin:auto;
+	height:500px;
+	border:1px solid black;
+}
+
+
+#humanbox{
+	background-image:url("/anatomy.png");
+	float:left;
+	width:300px;
+	height:500px;
+	background-size:cover;
+	border-right:1px solid black;
+	background-position:-100px;
+}
+
+#m1{
+ border:1px solid $shouldersc;
+}
+#m2{
+ border: 1px solid $chestc;
+}
+#m3{
+	border: 1px solid $backc;
+}
+#m4{
+	border: 1px solid $armsc;
+}
+#m5{
+	border: 1px solid $legsc;
+}
+.bodybox{
+	width:295px;
+	height:500px;
+	float:left;
+
+	.bodyitem{
+		width:290px;
+		text-align:center;
+		font-size:50px;
+		height:100px;
+	}
+
+}
+
+
+.wrapper{
+	//background-image:url("/teengirls.jpg");
+	background-size:cover;
+}
