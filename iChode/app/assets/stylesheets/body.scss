@@ -1,0 +1,23 @@
+#bodymenubox{
+	width:800px;
+	height:700px;
+	margin:auto;
+	margin-top:100px;
+	
+	//border:1px solid #ddd;
+	background: rgba(200,54,54,0.35);
+	position:relative;
+	border-radius:10px;
+	padding:40px;
+
+	a{
+		font-size:50px;
+		font-weight:bold;
+		text-decoration:none;
+		color:white;
+		padding:20px;
+		width:100%;
+		float:left;
+		text-align:center;
+	}
+}
