@@ -1,4 +1,8 @@
-#bodymenubox{
+// Place all the styles related to the muscles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#musclemenubox{
 	width:800px;
 	height:700px;
 	margin:auto;
@@ -6,7 +10,7 @@
 	
 	//border:1px solid #ddd;
 	background: rgba(200,54,54,0.35);
-	background-image:url("/anatomy.png");
+	//background-image:url("/anatomy.png");
 	position:relative;
 	border-radius:10px;
 	padding:40px;
@@ -27,5 +31,15 @@
 
 	a:hover{
 		background: rgba(200,54,54,0.2);
+	}
+
+	h1{
+		border-bottom:1px solid black;
+	}
+
+	#muscleoptions{
+		text-align:center;
+		color:white;
+		font-size:40px;
 	}
 }

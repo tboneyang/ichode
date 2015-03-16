@@ -4,4 +4,7 @@ class StaticController < ApplicationController
 
 	def body
 	end
+
+	def motivation
+	end
 end

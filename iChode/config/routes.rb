@@ -5,7 +5,14 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'static#home'
 
-   match '/body', to: "static#body", via: 'get'
+   match '/body', to: "body_parts#index", via: 'get'
+   match '/motivation', to: "static#motivation", via: 'get'
+
+
+   resources :body_parts do
+      resources :muscles
+    end
+
 
 
   # Example of regular route:
