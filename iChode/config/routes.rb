@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'static#home'
 
+   match 'auth/:provider/callback', to: 'sessions#create', via: 'get'
+  # match 'auth/failure', to: redirect('/'), via: 'get'
+  # match 'signout', to: 'sessions#destroy', as: 'signout', via: 'get'
+
    match '/body', to: "body_parts#index", via: 'get'
    match '/motivation', to: "static#motivation", via: 'get'
 
