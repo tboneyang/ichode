@@ -6,8 +6,8 @@ Rails.application.routes.draw do
    root 'static#home'
 
    match 'auth/:provider/callback', to: 'sessions#create', via: 'get'
-  # match 'auth/failure', to: redirect('/'), via: 'get'
-  # match 'signout', to: 'sessions#destroy', as: 'signout', via: 'get'
+  match 'auth/failure', to: redirect('/'), via: 'get'
+  match 'signout', to: 'sessions#destroy', as: 'signout', via: 'get'
 
    match '/body', to: "body_parts#index", via: 'get'
    match '/motivation', to: "static#motivation", via: 'get'

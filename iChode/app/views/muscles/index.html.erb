@@ -1,0 +1,8 @@
+<div>
+	<% @muscles.each do |muscle| %>
+		<div id="bpblock"> <%= link_to muscle.name, muscle_path(muscle) %> </div>
+		<br>
+	<%end%>
+
+
+</div>

@@ -68,3 +68,11 @@ html, body{
 	background-image:url("/bwguy4.jpg");
 	background-size:cover;
 }
+
+#user_nav{
+	color:white;
+}
+
+#user_nav:a{
+	color:white;
+}

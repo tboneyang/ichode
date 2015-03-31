@@ -6,6 +6,14 @@ class MusclesController < ApplicationController
 
 	end
 
+	def index
+		@muscles = Muscle.all 
+	end
+
+	def show
+		@muscle = Muscle.find(params[:id])
+	end
+
 	private
 		def muscle_params
 			params.require(:muscle).permit(:name)

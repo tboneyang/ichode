@@ -1,10 +1,18 @@
 <div id="picturebox">
 
 <div id="bodymenubox">
+
 	<% @body_parts.each do |bp| %>
 		<div id="bpblock"> <%= link_to bp.name, body_part_path(bp) %> </div>
 		<br>
 	<%end%>
+	
+	<script type="text/javascript">
+		//var classarray = ["m1","m2","m3","m4","m5"];
+		//$("#bodymenubox").empty();
+
+
+	</script>
 </div>
 
 </div>
