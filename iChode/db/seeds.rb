@@ -29,3 +29,6 @@ muscles_list = [
 muscles_list.each do |name, part|
 	Muscle.create( name: name, body_part: BodyPart.find_by_name(part))
 end
+
+e1 = Exercise.create(:name => 'dumbell-shoulder-press')
+Musclesworkeds.create(:muscle_id => 1, :exercise_id => 1)
