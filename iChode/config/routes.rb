@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout', via: 'get'
 
    match '/body', to: "body_parts#index", via: 'get'
+   match '/exercises', to: "exercises#index", via: 'get'
    match '/motivation', to: "static#motivation", via: 'get'
 
 

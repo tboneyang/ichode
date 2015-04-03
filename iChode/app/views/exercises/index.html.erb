@@ -1,0 +1,10 @@
+<div>
+	<h1>Workouts!</h1>
+
+	<% @exercises.each do |ex| %>
+	<div id="exblock">
+		<%= ex.name %>
+	<br>
+	<% end %>
+
+</div>

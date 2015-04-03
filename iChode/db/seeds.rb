@@ -9,6 +9,8 @@
 
 bodyparts = BodyPart.create([{ name: "shoulders"}, {name: "torso"}, {name: "arms"}, {name: "waist"}, {name: "legs"}])
 
+exercises = Exercise.create([{ name: "dumbell-lateral-raise"}, {name: "dumbell-shrugs"}])
+
 muscles_list = [
 	["traps", "shoulders"],
 	["delts", "shoulders"],
@@ -30,5 +32,5 @@ muscles_list.each do |name, part|
 	Muscle.create( name: name, body_part: BodyPart.find_by_name(part))
 end
 
-e1 = Exercise.create(:name => 'dumbell-shoulder-press')
-Musclesworkeds.create(:muscle_id => 1, :exercise_id => 1)
+#e1 = Exercise.create(:name => 'dumbell-shoulder-press')
+#Musclesworkeds.create(:muscle_id => 1, :exercise_id => 1)

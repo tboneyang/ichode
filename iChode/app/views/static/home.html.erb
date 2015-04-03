@@ -1,4 +1,10 @@
 <div id="picturebox2">
+
+		<audio controls preload="true" autoplay>
+ <source src="cena2.mp3"
+         type='audio/mpeg'>
+ <p>Your user agent does not support the HTML5 Audio element.</p>
+</audio>
 	<div id="user_nav">
 		<% if current_user %>
 		Signed in as <strong><%= current_user.name %></strong>!
@@ -22,7 +28,7 @@
 			<a href="">MY SCHEDULE</a>
 			<a href="">GAINS OVER TIME</a>
 			<a href="">PERSONAL RECORDS</a>
-			<a href="">EXPLORE WORKOUTS</a>
+			<a href="/exercises">EXPLORE WORKOUTS</a>
 			<a href="/motivation">MOTIVATION</a>
 			<br>
 
