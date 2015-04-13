@@ -1,9 +1,12 @@
 <div>
 	<div>
-		<%= muscle.name %>
+		<%= @muscle.name %>
 	</div>
 
 	<div>Now show all the exercises</div>
 
+	<% @muscle.musclesworkeds.each do |mw| %>
+		Exercise id: <%= mw.exercise.id %>
+	<% end %>
 
 </div>
