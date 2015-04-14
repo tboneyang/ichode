@@ -9,7 +9,7 @@
 
 bodyparts = BodyPart.create([{ name: "shoulders"}, {name: "torso"}, {name: "arms"}, {name: "waist"}, {name: "legs"}])
 
-exercises = Exercise.create([{ name: "dumbell-lateral-raise"}, {name: "dumbell-shrugs"}])
+exercises = Exercise.create([{ name: "dumbell-lateral-raise"}, {name: "dumbell-shrugs"}, {name: "preacher-curls"}])
 
 muscles_list = [
 	["traps", "shoulders"],
@@ -34,3 +34,5 @@ end
 
 #e1 = Exercise.create(:name => 'dumbell-shoulder-press')
 #Musclesworkeds.create(:muscle_id => 1, :exercise_id => 1)
+
+muscle_exercises = MuscleExercises.create( muscle: Muscle.find_by_name("biceps"), exercise: Exercise.find_by_name("preacher-curls"))

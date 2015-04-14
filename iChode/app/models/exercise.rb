@@ -8,6 +8,6 @@
 #
 
 class Exercise < ActiveRecord::Base
-	has_many :musclesworkeds
-	has_many :muscles, through: :musclesworkeds
+	has_many :muscle_exercises
+	has_many :muscles, through: :muscle_exercises
 end

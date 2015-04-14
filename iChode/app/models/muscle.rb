@@ -11,6 +11,6 @@
 
 class Muscle < ActiveRecord::Base
 	belongs_to :body_part
-	has_many :musclesworkeds
-	has_many :exercises, through: :musclesworkeds
+	has_many :muscle_exercises
+	has_many :exercises, through: :muscle_exercises
 end
